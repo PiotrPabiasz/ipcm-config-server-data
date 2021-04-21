@@ -2,18 +2,18 @@ my-eureka-cluster:
   port:
     peer1: 8761
     #peer2: 8762
-  name: ioi-eureka-cluster
+  name: ipcm-eureka-cluster
 ---
 spring:
   profiles: peer1
 eureka:
   instance:
-    hostname: ioi-eureka-peer1
+    hostname: ipcm-eureka-peer1
     appname: ${my-eureka-cluster.name}
   client:
     registerWithEureka: false
     fetchRegistry: false
     serviceUrl:
-      defaultZone: http://ioi-eureka-peer1:8761/eureka
+      defaultZone: http://ipcm-eureka-peer1:8761/eureka
 server:
   port: ${my-eureka-cluster.port.peer1}

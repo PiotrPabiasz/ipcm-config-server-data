@@ -1,7 +1,7 @@
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://eureka-peer1:8761/eureka
+      defaultZone: http://icmp-eureka-peer1:8761/eureka
 ---
 ## MySQL
 spring:
