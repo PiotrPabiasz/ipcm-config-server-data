@@ -1,19 +1,11 @@
-my-eureka-cluster:
-  port:
-    peer1: 8761
-    #peer2: 8762
-  name: ipcm-eureka-cluster
----
 spring:
   profiles: peer1
 eureka:
-  instance:
-    hostname: ipcm-eureka-peer1
-    appname: ${my-eureka-cluster.name}
   client:
     registerWithEureka: false
     fetchRegistry: false
     serviceUrl:
-      defaultZone: http://ipcm-eureka-peer1:8761/eureka
+      defaultZone: http://ipcm-eureka-server:8761/
 server:
-  port: ${my-eureka-cluster.port.peer1}
+  port: 8761
+  wait-time-in-ms-when-sync-empty: 0
