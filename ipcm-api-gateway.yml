@@ -1,7 +1,7 @@
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://icmp-eureka-server:8761
+      defaultZone: http://ipcm-eureka-server:8761
 
 server:
   port: 8080
