@@ -4,4 +4,4 @@ eureka:
       defaultZone: http://ipcm-eureka-server:8761/eureka
 ---
 server:
-  port: 8005
+  port: 0
