@@ -10,7 +10,7 @@ zuul:
   routes:
     user:
       path: /api/v1/**
-      url: http://ipcm-user-service:8000/
+      url: http://ipcm-user-service/
     test:
       path: /api/v2/**
-      url: http://ipcm-test-service:8005/
+      url: http://ipcm-test-service/
