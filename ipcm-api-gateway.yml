@@ -13,4 +13,4 @@ zuul:
       url: http://ipcm-user-service:8000/
     test:
       path: /api/v2/**
-      url: http://ipcm-test-service/
+      url: http://ipcm-test-service:8081/
